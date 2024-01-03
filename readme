@@ -1,1 +1,16 @@
+La base de données avec les colonnes suivants:
+  1 colonne M/B (la cellule malade ou bonne)
+  10 colonnes de valeur moyennes descriptives numeriques (type float)
+  10 colonnes de standart erreur pour les valeurs moyennes
+  10 colonnes de avec le resultat le plus pire
 
+Pas de valeur manquants
+Pas de duplication
+Une colonnes a été suprimée ('Unnamed 32')
+
+Le datavis:
+  Boxplots pour chaque colonnes avec le distribution de valeurs de dataset normal et malin.
+    *presque pour chaque variable (moyenne) il y a la difference dans les distributions de valeurs moynnes et les plus pire
+    (sauf que fractuale dimetion mean)
+  
+  
