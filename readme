@@ -22,4 +22,7 @@ Statistique:
   One-way ANOVA test
 
 Generated dataframe is in csv file in this repository
+
+With PCA it is determined that 0.75 of total variance is explained by 2 dimentional variables.
+By using PCA with unsuperwised clustering it is clean that there are 2 clusters (determined by silhouette_score)
   
