@@ -12,5 +12,14 @@ Le datavis:
   Boxplots pour chaque colonnes avec le distribution de valeurs de dataset normal et malin.
     *presque pour chaque variable (moyenne) il y a la difference dans les distributions de valeurs moynnes et les plus pire
     (sauf que fractuale dimetion mean)
-  
+  Distplot pour le valeur moynees +-st erreur pour M/B
+  Heatmap avec coef de correlation pour moyenne et worst value
+  Pairplot de moyenne et worst values avec different colors of M/B
+
+Statistique:
+  All calculated p-value are very small, e.i their distribution is normal
+  Chi-square in this case gives the same value (look in colab)
+  One-way ANOVA test
+
+Generated dataframe is in csv file in this repository
   
