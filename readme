@@ -25,4 +25,12 @@ Generated dataframe is in csv file in this repository
 
 With PCA it is determined that 0.75 of total variance is explained by 2 dimentional variables.
 By using PCA with unsuperwised clustering it is clean that there are 2 clusters (determined by silhouette_score)
+
+Machine Learning
+1. Avec lazypredict on a éstimé 25 classifiers et a choisi 5 avec le Balanced Accuracy score le plus haut.
+    LogisticRegression(), SGDClassifier(),LinearSVC(), Perceptron(), SVC()
+2. Puis ces 5 models ont étaient par GridSearch pour choisi les meiuller hyperparametres.
+    La model de LogisticRegression() a été choisi pour la prochaine etape.
+3. La verification avec le matrix de confition a donné 0 false negative resultat
+4. Il faut verifier efficacité de model avec la reduction de nombre 
   
