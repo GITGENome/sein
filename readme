@@ -29,8 +29,25 @@ By using PCA with unsuperwised clustering it is clean that there are 2 clusters 
 Machine Learning
 1. Avec lazypredict on a éstimé 25 classifiers et a choisi 5 avec le Balanced Accuracy score le plus haut.
     LogisticRegression(), SGDClassifier(),LinearSVC(), Perceptron(), SVC()
-2. Puis ces 5 models ont étaient par GridSearch pour choisi les meiuller hyperparametres.
-    La model de LogisticRegression() a été choisi pour la prochaine etape.
-3. La verification avec le matrix de confition a donné 0 false negative resultat
-4. Il faut verifier efficacité de model avec la reduction de nombre de colonnes
-  
+    and MLP() + RandomForestClassifier()
+
+***  steps 2-4 was runned several times with multiple combination of columns ***
+
+2. For each model there was a choise of scaler between MaxAbsScaler(), MinMaxScaler(), Normalizer(), PowerTransformer(), 
+    QuantileTransformer(), RobustScaler(), StandardScaler()
+    I create a 2 dataframe with models, scaler and score/number of false negative result
+
+3. Puis ces models ont étaient par GridSearch pour choisi les meiuller hyperparametres.
+
+4. The confusion matrix was used to estimate if its possible to reduce the number of false negative results with the model
+  that allows changing of class weights
+
+5. The best models was chosen for staking model ensemble. Final estimator was tested as well to find the best score
+
+The final choise of columns
+1. To compare all columns they were normalised with StandartScaler and all visulised in the same plot
+2. Columns where was no visual difference between B/M were excluded
+3. Columns with a lot of outliers were excluded
+4. With the heatmap all columns was grouped according to correlation. If coef of correlation is higher that 0.8 it was included into group
+5. Withis each group only column with the highest corr coef with diagnosis was chosen
+6. One column with standart deviation that shows the best distribution of B/M was chosen also
